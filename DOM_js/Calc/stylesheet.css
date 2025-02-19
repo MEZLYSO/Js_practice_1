@@ -14,27 +14,82 @@ body {
 #root {
 
   width: 200px;
-  height: 400px;
+  height: auto;
   background-color: white;
   margin: 0 auto;
+  padding: 20px 20px;
+  background-color: black;
+  border-radius: 5px;
 
 }
 
 input {
-  width: 100%;
-  height: 20px;
+  width: 94%;
+  height: auto;
   border: none;
+  border-radius: 5px;
+  padding: 10px 0px;
+  padding-left: 10px;
+}
+
+input#output_data {
+
+  margin-bottom: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+}
+
+input#input_data {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input:disabled {
+  background-color: white;
+  color: black;
+}
+
+#pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 100%;
+  height: auto;
+  background-color: black;
 }
 
 button {
 
-  padding: 10px 10px;
+  padding: 1em;
 
 }
 
-#num {
-  background-color: red;
+#num,
+#op {
+  background-color: gray;
+  color: white;
   border: none;
   border-radius: 10px;
   margin: 10 auto;
+  transition: 0.3s;
+}
+
+#op:hover,
+#num:hover {
+  background-color: white;
+  color: black;
+}
+
+#ca_button {
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#ca_button:hover {
+  background-color: white;
+  color: black;
 }
