@@ -22,7 +22,29 @@
   border-bottom: 1px solid black;
 }
 
+#save,
+#clean {
+  border: none;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 4px 2px;
+}
+
+#save {
+  background-color: limegreen;
+}
+
+#clean {
+  background-color: orangered;
+}
+
+#clean:hover,
+#save:hover {
+  transform: scale(1.1);
+}
 
 #form input:focus {
-  border: none;
+  outline: none;
 }
