@@ -33,7 +33,7 @@
 }
 
 #save {
-  background-color: limegreen;
+  background-color: royalblue;
 }
 
 #clean {
@@ -72,6 +72,12 @@
   border-radius: 0px 5px 5px 0px;
   color: white;
   transition: 0.3s;
+}
+
+#message {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
 }
 
 #btn_delete:hover {
